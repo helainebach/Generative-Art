@@ -3,7 +3,7 @@ import java.util.Date;
 PImage    	myColor;
 int    	  	stageW   		= 1080;
 int    	  	stageH   		= 1080;
-int 	  	scaleFactor 	= 2;
+int 	  	scaleFactor 		= 2;
 color  	  	clrBG 			= 0;
 String 	  	pathDATA 		= "../../../0_data/";
 boolean   	sclDown			= true;
@@ -21,7 +21,6 @@ void settings(){
 }
 void setup() {
 	myColor = loadImage(pathDATA + "gradientFull/rainbow_02.png");
-	getColors();	
 	loadShapes();
 	noLoop();
 	shapeMode(CENTER);
@@ -49,14 +48,6 @@ void draw() {
 		}
 	}
 	paper(2,3,30); //noiseRes, speckSize, speckCount,
-}
-
-void getColors() {
-	count =100;
-	pickedColors 	= new color[count];
-	for (int i = 0; i < count; ++i) {
-		pickedColors[i] = myColor.get(Math.round( (int)random(myColor.width) ), 1 );
-	}	
 }
 
 void paper(int noiseRes, int speckSize, int speckCount) {

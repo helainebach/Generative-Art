@@ -43,7 +43,6 @@ void draw() {
 				translate(x*size+size/2,y*size+size/2);
 				rotate((int)random(4)*HALF_PI);
 			shape(shapes[(int)random(shapes.length-1)],0,0,size-20,size-20);
-			// shape(shapes[9],0,0,size-20,size-20);
 			popMatrix();
 		}
 	}

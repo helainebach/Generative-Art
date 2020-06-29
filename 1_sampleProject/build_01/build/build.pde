@@ -20,7 +20,7 @@ void setup() {
 
 void draw() {
 	if (sclDown){
-		scale(1/scaleFactor);
+		scale(.5);
 	}
 
 }

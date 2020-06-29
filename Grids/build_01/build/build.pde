@@ -3,7 +3,7 @@ import java.util.Date;
 PImage    	myColor;
 int    	  	stageW   		= 1080;
 int    	  	stageH   		= 1080;
-int 	  	scaleFactor 		= 2;
+int 	  	scaleFactor 	= 2;
 color  	  	clrBG 			= 0;
 String 	  	pathDATA 		= "../../../0_data/";
 boolean   	sclDown			= true;

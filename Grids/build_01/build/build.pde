@@ -6,7 +6,7 @@ int    	  	stageH   		= 1080;
 int 	  	scaleFactor 	= 2;
 color  	  	clrBG 			= 0;
 String 	  	pathDATA 		= "../../../0_data/";
-boolean   	sclDown			= true;
+boolean   	sclDown			= false;
 int 	  	size 			= 180;
 int 	  	count;
 color[]   	pickedColors;

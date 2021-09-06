@@ -54,8 +54,6 @@ void randomSelect(){
 }
 
 void exportVideo(){
-	import java.text.SimpleDateFormat;
-	import java.util.Date;
 	float vidLength = 15;
 	float fps       = 6;
 	saveFrame("../exports/frames2/###.png"); if (frameCount == vidLength*fps) exit();

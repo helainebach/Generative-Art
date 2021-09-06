@@ -1,17 +1,24 @@
-int a = 3;
-//__________________________________________________________
+// Tool to discover new truchet pattern arrangements
+
+int a = 4; // Change fidelity of pattern (size of array)
+
+//CONTROLS
+	// click : change random output
+	// s 	 : tile appearance
+	// p 	 : save image and print array
+//
+
 import 	java.text.SimpleDateFormat;
 import 	java.util.Date;
 PShape 	t;
 int 	r;
 PFont 	font;
-String 	pathDATA 	= "../../../0_data/";
 boolean tileStyle = true;
 int[][] tileArray = new int[a][a];
 //
 void setup() {
 	size(600, 700);
-	font = createFont(pathDATA + "fonts/Gotham-Bold 2.otf", 32);
+	font = createFont("../../../0_data/fonts/Gotham-Bold 2.otf", 32);
 	textFont(font, 70 / tileArray.length - 10);
 	textAlign(CENTER, CENTER);
 }
@@ -143,7 +150,6 @@ void keyPressed() {
 	case 'p':
 		String fileName = new SimpleDateFormat("yyyyMMddHHmmss'.png'").format(new Date());
 		saveFrame("../exports/stills/" + fileName);
-		println("\n");
 		for (int x = 0; x < tileArray.length; x++) {
 			for (int y = 0; y < tileArray.length; y++) {
 				System.out.printf("%2d", tileArray[x][y]);
@@ -151,9 +157,8 @@ void keyPressed() {
 			System.out.println();
 		}
 		break;
-	//
 	case 's':
-		if (tileStyle == true) {
+		if (tileStyle) {
 			tileStyle = false;
 		} else {
 			tileStyle = true;
@@ -163,9 +168,17 @@ void keyPressed() {
 }
 void mousePressed() {r += 100;}
 
+//Cool Arrays
 
 // 2 2 0 2 2
 // 3 3 1 0 2
 // 2 0 2 3 1
 // 1 3 3 0 1
 // 2 3 0 1 3
+
+ // 2 2 2 3 3 3
+ // 1 1 3 3 3 0
+ // 2 1 0 1 1 1
+ // 3 2 3 2 1 0
+ // 0 1 3 2 2 0
+ // 0 0 2 2 2 0

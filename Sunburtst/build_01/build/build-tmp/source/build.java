@@ -14,32 +14,51 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int    	stageW   	= 1080;
-int    	stageH   	= 1080;
-int 	scaleFactor = 2;
-int  	clrBG    	= 0xff202020;
-String 	pathDATA 	= "../../../data/";
-boolean sclDown		= true;
-
-public void settings(){
-	if (sclDown){
-		size(stageW/scaleFactor,stageH/scaleFactor); 
-	}else{
-		size(stageW,stageH);
-	}
-}
+int[] palette = {0xffCEBA9E,0xffA57B52,0xff996C54,0xff706560};
+float   r;
+float   x, y;
 
 public void setup() {
 	
-	background(clrBG);	
+	noStroke();
 }
 
 public void draw() {
-	if (sclDown){
-		scale(.5f);
+	background(0xff2E2D36);
+	int count = 9;
+	int area = count * count;
+	int cell = width / count;
+	for (int n = 0; n < area; n++) {
+		int x = (n % count) * cell + cell / 2;
+		int y = (n / count) * cell + cell / 2;
+		int c = palette[((n / count) * (n % count)) % palette.length];
+		fill(c);
+		star(6, cell / 2.5f, 1.75f, x, y);
 	}
-
 }
+
+public void star(int n, float s, float d, float pX, float pY) {
+	pushMatrix();
+	translate(pX, pY);
+	rotate(-PI / 2);
+	beginShape();
+	for (float a = 0; a < TWO_PI; a += TWO_PI / n) {
+		r = s;
+		polar(a);
+		vertex(x, y);
+		r = r / d;
+		polar(a + TWO_PI / (n * 2));
+		vertex(x, y);
+	}
+	endShape(CLOSE);
+	popMatrix();
+}
+
+public void polar(float a) {
+	x = r * cos(a);
+	y = r * sin(a);
+}
+  public void settings() { 	size(600, 600); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "build" };
     if (passedArgs != null) {

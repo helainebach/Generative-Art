@@ -3,6 +3,10 @@ import processing.data.*;
 import processing.event.*; 
 import processing.opengl.*; 
 
+import java.text.SimpleDateFormat; 
+import java.util.Date; 
+import processing.pdf.*; 
+
 import java.util.HashMap; 
 import java.util.ArrayList; 
 import java.io.File; 
@@ -16,33 +20,30 @@ public class build extends PApplet {
 
 float u = 200;
 float uL, uG;
+
+
+
+boolean record = true;
 public void setup() {
 	
 	background(255);
+	String fileName = new SimpleDateFormat("yyyyMMddHHmmss'.pdf'").format(new Date());
+	if (record) {beginRecord(PDF, "../exports/stills/" + fileName);}
 }
 public void draw() {
 	stroke(0);
 	strokeWeight(5);
-	translate(u / 3, u / 3);
-	tekiah();
-	translate(0, u / 3);
-	shevarim();
-	translate(u * 1.25f, 0);
-	teruah();
-	translate(-u * 1.25f, u / 3);
-	tekiah();
-	translate(0, u / 2);
-	tekiah();
-	translate(0, u / 3);
-	shevarim();
-	translate(0, u / 3);
-	tekiah();
-	translate(0, u / 2);
-	tekiah();
-	translate(0, u / 3);
-	teruah();
-	translate(0, u / 3);
-	tekiahGdola();
+	translate (u / 3, u / 3); 		tekiah();
+	translate (0, u / 3); 			shevarim();
+	translate (u * 1.25f, 0);		teruah();
+	translate (-u * 1.25f, u / 3);	tekiah();
+	translate (0, u / 2);			tekiah();
+	translate (0, u / 3);			shevarim();
+	translate (0, u / 3);			tekiah();
+	translate (0, u / 2);			tekiah();
+	translate (0, u / 3);			teruah();
+	translate (0, u / 3);			tekiahGdola();
+	endRecord();
 }
 public void tekiah() {
 	line(0, 0, u, 0);

@@ -1,8 +1,14 @@
 float u = 200;
 float uL, uG;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import processing.pdf.*;
+boolean record = true;
 void setup() {
 	size(600, 800);
 	background(255);
+	String fileName = new SimpleDateFormat("yyyyMMddHHmmss'.pdf'").format(new Date());
+	if (record) {beginRecord(PDF, "../exports/stills/" + fileName);}
 }
 void draw() {
 	stroke(0);
@@ -17,6 +23,7 @@ void draw() {
 	translate (0, u / 2);			tekiah();
 	translate (0, u / 3);			teruah();
 	translate (0, u / 3);			tekiahGdola();
+	endRecord();
 }
 void tekiah() {
 	line(0, 0, u, 0);

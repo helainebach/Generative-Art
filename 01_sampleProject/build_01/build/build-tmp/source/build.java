@@ -14,32 +14,17 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int    	stageW   	= 1080;
-int    	stageH   	= 1080;
-int 	scaleFactor = 2;
-int  	clrBG    	= 0xff202020;
-String 	pathDATA 	= "../../../data/";
-boolean sclDown		= true;
-
-public void settings(){
-	if (sclDown){
-		size(stageW/scaleFactor,stageH/scaleFactor); 
-	}else{
-		size(stageW,stageH);
-	}
-}
-
 public void setup() {
+    
+    frameRate(30);
 	
-	background(clrBG);	
 }
 
 public void draw() {
-	if (sclDown){
-		scale(.5f);
-	}
-
+	background(0);
+	
 }
+  public void settings() {  size(600,600,P2D); }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "build" };
     if (passedArgs != null) {

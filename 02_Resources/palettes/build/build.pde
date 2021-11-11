@@ -16,8 +16,10 @@ color[][] palette = {
 	{#553470,#AB2658,#E8C954,#39736A,#170F27},
 	{#F04F32,#F3C91C,#1060B0,#EFF0F5,#252020},
 	{#E145E5,#FBDD73,#4F97F1,#B9CCE3},
-	{#050A0E,#494643,#7E765B,#041E43,#001A1E}
+	{#050A0E,#494643,#7E765B,#041E43,#001A1E},
+	{#000f41,#ffffff,#a500fa,#fba422,#61ff82,#55fff5,#fa7823}
 };
+
 
 int total = palette.length;
 void settings() {
@@ -41,7 +43,6 @@ void mousePressed() {
 	int y = (int)mouseY / (height / total);
 	int l = palette[y].length;
 	String 	[] colors = new String [l];
-	println();
 	print("color[] palette = {");
 	for (int i = 0; i < l; i++) {
 		colors[i] = hex(palette[y][i], 6);
@@ -51,4 +52,5 @@ void mousePressed() {
 			print("#" + colors[i] + "};");
 		}
 	}
+	println();
 }

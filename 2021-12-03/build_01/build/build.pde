@@ -2,7 +2,6 @@ color[] palette = {#03A08F,#0160B6,#FFDD5E,#FFA051,#FF3C1B};
 boolean record 	= false;
 float 	rate 	= 0.05;
 float 	off;
-float   x, y, r;
 color 	bg = palette[0];
 void setup() {
 	size(600, 600, P2D);

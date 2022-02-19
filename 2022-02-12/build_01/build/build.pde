@@ -61,3 +61,5 @@ void blend(int lineNumber, int points, int xl, int yl, int w, int h, int rand) {
 		endShape(OPEN);
 	}
 }
+
+color[] palette = { };

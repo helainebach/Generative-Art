@@ -24,7 +24,7 @@ void draw() {
 		randomSeed(y * 1000 * rand);
 		// l = (int)random(1, 24);
 		l = (int)random(1, 24);
-		if (y % 2 != 0) {
+		if (y % 2 != 0) {Bu
 			lnS =  c - (pl / 2) * u;
 			lnE =  c + (l  / 2) * u;
 			line(lnS, y, lnE, y);

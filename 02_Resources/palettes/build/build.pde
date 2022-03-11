@@ -6,13 +6,15 @@ color[][] palette = {
 	{#0160B6,#03A08F,#FFDD5E,#FFA051,#FF3C1B},
 	{#5A3174,#BEA7F2,#D55691,#FFDC5E,#B1CD3C,#00A500},
 	{#4D241D,#EADEBB,#37344F,#607A78,#9B0000,#EA8F8A},
+	{#1A535C,#4ECDC4,#F7FFF7,#FF6B6B,#FFE66D},
+	{#FF810A,#540D6E,#FFEA00,#EE4266},
 	{#000F41,#55FFF5,#1ECD1E,#A500FA,#FA7823,#FFFA37,#DE1C1C}
 };
 
 
 int total = palette.length;
 void settings() {
-	size(450, total * 50);
+	size(450, total * 50,P2D);
 }
 void draw() {
 	noStroke();
@@ -61,4 +63,5 @@ void mousePressed() {
 // {#050A0E,#494643,#7E765B,#041E43,#001A1E},
 // {#ffd03f,#00efa8,#0a39ea,#ff80b5,#ff0030},
 // {#000f41,#ffffff,#a500fa,#fba422,#61ff82,#55fff5,#fa7823}
+
 

@@ -20,8 +20,8 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1440"
-     inkscape:window-height="847"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
      id="namedview524"
      showgrid="false"
      units="in"
@@ -606,4 +606,16 @@
          id="path516" />
     </g>
   </g>
+  <WCB
+     layer="0"
+     node="0"
+     lastpath="0"
+     lastpathnc="0"
+     lastknownposx="0"
+     lastknownposy="0"
+     pausedposx="0"
+     pausedposy="0"
+     randseed="0"
+     row="0"
+     application="Axidraw" />
 </svg>

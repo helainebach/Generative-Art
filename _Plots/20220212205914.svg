@@ -6,7 +6,7 @@
    sodipodi:docname="20220212205914.svg"
    width="8.5in"
    height="11in"
-   inkscape:version="1.1-dev (b471b9b, 2020-09-09)"
+   inkscape:version="1.2 (dc2aeda, 2022-05-15)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -26,12 +26,16 @@
      showgrid="false"
      units="in"
      inkscape:zoom="0.58996212"
-     inkscape:cx="407.65329"
-     inkscape:cy="528"
+     inkscape:cx="408.5008"
+     inkscape:cy="531.39005"
      inkscape:window-x="0"
      inkscape:window-y="25"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="Layer_2" />
+     inkscape:window-maximized="0"
+     inkscape:current-layer="Layer_2"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="in" />
   <defs
      id="defs1104">
     <style
@@ -280,4 +284,18 @@
      randseed="0"
      row="0"
      application="Axidraw" />
+  <plotdata
+     application="axidraw"
+     model="2"
+     layer="-2"
+     node="0"
+     last_path="0"
+     node_after_path="0"
+     last_known_x="0"
+     last_known_y="0"
+     paused_x="0"
+     paused_y="0"
+     randseed="0"
+     row="0"
+     id="1655171591" />
 </svg>

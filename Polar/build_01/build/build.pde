@@ -15,7 +15,7 @@ void draw() {
 		polar(i);
 		stroke(255);
 		strokeWeight(5);
-		vlotertex(x, y);
+		vortex(x, y);
 	}
 	endShape(CLOSE);
 }

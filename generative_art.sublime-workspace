@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"no",
+				"noStroke"
+			],
+			[
+				"rect",
+				"rect\trectMode"
+			],
+			[
 				"grid",
 				"grid\tgrid"
 			],
@@ -32,10 +40,6 @@
 				"grid"
 			],
 			[
-				"no",
-				"noFill"
-			],
-			[
 				"sto",
 				"strokeWeight"
 			],
@@ -50,10 +54,6 @@
 			[
 				"push",
 				"push"
-			],
-			[
-				"rect",
-				"rect"
 			],
 			[
 				"palet",
@@ -200,7 +200,7 @@
 			]
 		]
 	],
-	"build_varint": "Kill running sketches",
+	"build_varint": "",
 	"command_palette":
 	{
 		"height": 0.0,
@@ -287,16 +287,16 @@
 	[
 		"/Users/helainebach/Documents/GitHub/Generative-Art",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/01",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/01/build"
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/03",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/03/build"
 	],
 	"file_history":
 	[
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/02/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/2022-12-30/build_02/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/03/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/01/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/02/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/triominos/build_01/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/0_data/fonts/Gotham-Bold.otf",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01/build/build.pde",
@@ -475,7 +475,7 @@
 	},
 	"output.exec":
 	{
-		"height": 58.0
+		"height": 27.0
 	},
 	"output.find_results":
 	{

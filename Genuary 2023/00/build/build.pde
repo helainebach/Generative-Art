@@ -20,6 +20,7 @@ void draw() {
 	bg();
 	
 	sig(day, prompts.getString(day - 1, 0), true, 1, 4);
+	off += rate;
 	// record();
 }
 void bg() {

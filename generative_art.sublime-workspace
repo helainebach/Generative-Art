@@ -4,24 +4,12 @@
 		"selected_items":
 		[
 			[
-				"lerp",
-				"lerpcolor\tlerpColor"
-			],
-			[
-				"path",
-				"pathDATA\tpathDATA"
-			],
-			[
-				"stoke",
-				"stroke"
+				"grid",
+				"grid\tgrid"
 			],
 			[
 				"for",
 				"for\tfor"
-			],
-			[
-				"Pve",
-				"PVector\tPVector"
 			],
 			[
 				"hell",
@@ -140,7 +128,7 @@
 	"buffers":
 	[
 	],
-	"build_system": "",
+	"build_system": "Packages/Processing/Build Systems/Processing.sublime-build",
 	"build_system_choices":
 	[
 		[
@@ -174,9 +162,45 @@
 				"Packages/Processing/Build Systems/Processing.sublime-build",
 				""
 			]
+		],
+		[
+			[
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					""
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Re-run sketch"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch (Processing 3 only)"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Run sketch fullscreen"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Export sketch as application"
+				],
+				[
+					"Packages/Processing/Build Systems/Processing.sublime-build",
+					"Kill running sketches"
+				],
+				[
+					"Packages/User/vsketch.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/Processing/Build Systems/Processing.sublime-build",
+				"Kill running sketches"
+			]
 		]
 	],
-	"build_varint": "",
+	"build_varint": "Kill running sketches",
 	"command_palette":
 	{
 		"height": 0.0,
@@ -262,27 +286,17 @@
 	"expanded_folders":
 	[
 		"/Users/helainebach/Documents/GitHub/Generative-Art",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/0_data",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/0_data/fonts",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Looping Animation",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Looping Animation/build_01",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Looping Animation/build_01/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Polar",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Polar/build_01",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Polar/build_01/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Text",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Text/build_02",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Text/build_02/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/triominos",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/triominos/build_01",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/triominos/build_01/build"
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/01",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/01/build"
 	],
 	"file_history":
 	[
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Looping Animation/build_01/build/build.pde",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/2022-11-11/build_02/build/build.pde",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/2022-11-11/build_01/build/build.pde",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Polar/build_01/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/02/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/01/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/triominos/build_01/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/0_data/fonts/Gotham-Bold.otf",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01/build/build.pde",
@@ -341,6 +355,7 @@
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Color Pages/build_01/exports/20220122104829/20220122104836.svg",
 		"/Users/helainebach/Dropbox (Personal)/Generative-Art/truchet tiles/build_09/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/2022-01-23/build_01/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Polar/build_01/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Thrasio/build_03/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Thrasio/build_04/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Thrasio/build_01/build/build.pde",
@@ -352,7 +367,7 @@
 	],
 	"find":
 	{
-		"height": 44.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -366,7 +381,6 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"off",
 			"self.u",
 			"u",
 			"c1",
@@ -426,7 +440,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 28.0
+		"height": 27.0
 	},
 	"input":
 	{
@@ -461,7 +475,7 @@
 	},
 	"output.exec":
 	{
-		"height": 128.0
+		"height": 58.0
 	},
 	"output.find_results":
 	{
@@ -471,7 +485,7 @@
 	"project": "generative_art.sublime-project",
 	"replace":
 	{
-		"height": 52.0
+		"height": 50.0
 	},
 	"save_all_on_build": true,
 	"select_file":

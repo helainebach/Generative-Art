@@ -11,7 +11,7 @@ float   rate 	 = PI / 150;
 int 	day 	 = 1;
 //
 void setup() {
-	size(1080, 1080, P2D);
+	size(1080, 1080);
 	folderName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 	font = createFont(pathDATA + "fonts/ubuntu.ttf", 20);
 	prompts = loadTable("../../prompts.csv", "header");

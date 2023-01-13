@@ -5,7 +5,31 @@
 		[
 			[
 				"no",
-				"noStroke"
+				"noFill"
+			],
+			[
+				"grid",
+				"grid\tgrid"
+			],
+			[
+				"random",
+				"random\trandomSeed"
+			],
+			[
+				"rect",
+				"rect\trectMode"
+			],
+			[
+				"push",
+				"push\tpush-pop"
+			],
+			[
+				"for",
+				"for\tfor"
+			],
+			[
+				"pr",
+				"println"
 			],
 			[
 				"Arr",
@@ -28,16 +52,8 @@
 				"background\tbackground"
 			],
 			[
-				"rect",
-				"rect\trectMode"
-			],
-			[
 				"swit",
 				"switch\tswitch"
-			],
-			[
-				"for",
-				"for\tfor"
 			],
 			[
 				"hell",
@@ -50,10 +66,6 @@
 			[
 				"ima",
 				"image"
-			],
-			[
-				"random",
-				"random"
 			],
 			[
 				"gri",
@@ -70,10 +82,6 @@
 			[
 				"storke",
 				"stroke"
-			],
-			[
-				"push",
-				"push"
 			],
 			[
 				"palet",
@@ -262,12 +270,24 @@
 	"expanded_folders":
 	[
 		"/Users/helainebach/Documents/GitHub/Generative-Art",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/0_data",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/0_data/photo",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/2021-12-03",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/05",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/05/build"
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/05/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08-draft"
 	],
 	"file_history":
 	[
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/04/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/12-shifting/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/11/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/10/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/vsketch/samples/circular_patterns/sketch_circular_patterns.py",
+		"/Users/helainebach/Documents/Processing/libraries/minim/examples/Basics/RecordAudioOutput/RecordAudioOutput.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/09/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08/build 01/build 01.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/07/build/build.pde",
@@ -276,7 +296,6 @@
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/05/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/02/build/build.pde",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/04/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/triominos/build_01/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/0_data/fonts/Gotham-Bold.otf",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01/build/build.pde",
@@ -347,7 +366,7 @@
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 27.0
 	},
 	"find_in_files":
 	{
@@ -361,6 +380,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			">",
+			"photo",
+			"]);\n",
+			"radius",
+			"var",
+			"import java.text.SimpleDateFormat;\nimport java.util.Date;\n// \t\t  \t\t\t0 black // 1 white // 2 yellow // 3 orange // 4 purple\ncolor[] palette  = {#010300,#F3E3ED,#FEC513,#FE7434,#EFA9EC};\nString \tpathDATA = \"../../../0_data/\";\nTable \tprompts;\nString  folderName;\nPFont \tfont;\nfloat \toff \t = PI;\nfloat   rate \t = PI / 150;\nint \tday \t = 11;\n//\nvoid setup() {\n\tsize(1080, 1080);\n\tfolderName = new SimpleDateFormat(\"yyyyMMddHHmmss\").format(new Date());\n\tfont = createFont(pathDATA + \"fonts/ubuntu.ttf\", 20);\n\tprompts = loadTable(\"../../prompts.csv\", \"header\");\n\tnoLoop();\n}\nvoid draw() {\n\tbackground(palette[3]);\n\tfor (int i = 1; i < 9; ++i) {\n\t\trectMode(CENTER);\n\t\tnoStroke();\n\t\tfill(palette[(int)random(3)]);\n\t\twrongRect(width / 2, width / 20 + width / 10 * i, width / 3 * 2, width / 20, width / 40);\n\t}\n\trectMode(CORNER);\n\tsig(day, prompts.getString(day - 1, 0), true, 1, 0);\n\toff += rate;\n\t// record();\n}\nvoid wrongRect(float x, float y, float w, float h, float o) {\n\tbeginShape();\n\tvertex(x - w / 2 + random(-o, o), y - h / 2 + random(-o, o));\n\tvertex(x + w / 2 + random(-o, o), y - h / 2 + random(-o, o));\n\tvertex(x + w / 2 + random(-o, o), y + h / 2 + random(-o, o));\n\tvertex(x - w / 2 + random(-o, o), y + h / 2 + random(-o, o));\n\tendShape(CLOSE);\n}\nvoid record() {\n\tsaveFrame(\"../exports/\" + folderName + \"/###.png\");\n\tif (frameCount > TWO_PI / rate) exit();\n}\nvoid keyPressed() {\n\tswitch (key) {\n\tcase 'p':\n\t\tString fileName = new SimpleDateFormat(\"yyyyMMddHHmmss'.png'\").format(new Date());\n\t\tsaveFrame(\"../exports/\" + folderName + \"/\" + fileName);\n\t\tbreak;\n\t}\n}\nvoid sig(int d, String prompt, boolean bg, int textCol, int bgCol) {\n\tString txt = \"#genuary\" + d + \" // \" + prompt + \" // @helainebach\";\n\tint n = txt.length();\n\tif (bg) {\n\t\tfill(palette[bgCol]);\n\t\tstroke(palette[bgCol]);\n\t\tstrokeWeight(10);\n\t\trect((width - 20) - n * 10, 20, n * 10, 20);\n\t}\n\ttextFont(font);\n\ttextAlign(RIGHT, TOP);\n\tfill(palette[textCol]);\n\ttext(txt, width - 20, 20);\n}",
+			"30",
+			"100, height - 100",
+			"100, width - 100",
+			"import java.text.SimpleDateFormat;\nimport java.util.Date;\nimport ddf.minim.*;\nimport ddf.minim.ugens.*;\n// \t\t  \t\t\t0 black // 1 white // 2 yellow // 3 orange // 4 purple\ncolor[] palette  = {#010300,#F3E3ED,#FEC513,#FE7434,#EFA9EC};\nString \tpathDATA = \"../../../0_data/\";\nTable \tprompts;\nString  folderName;\nPFont \tfont;\nfloat \toff \t = 0;\nfloat   rate \t = PI / 150;\nint \tday \t = 10;\nMinim minim;\n\nAudioOutput   out;\nAudioRecorder recorder;\nAudioSample kick;\nAudioSample snare;\n//\nvoid setup() {\n\tsize(1080, 1080);\n\tfolderName = new SimpleDateFormat(\"yyyyMMddHHmmss\").format(new Date());\n\tfont = createFont(pathDATA + \"fonts/ubuntu.ttf\", 20);\n\tprompts = loadTable(\"../../prompts.csv\", \"header\");\n\tminim = new Minim(this);\n\tkick = minim.loadSample(\"BD.mp3\", 512);\n\tsnare = minim.loadSample(\"SD.wav\", 512);\n}\nvoid draw() {\n\tbg();\n\tsig(day, prompts.getString(day - 1, 0), true, 1, 0);\n\toff += rate;\n\t// record();\n}\nvoid bg() {\n\tbackground(palette[3]);\n}\nvoid record() {\n\tsaveFrame(\"../exports/\" + folderName + \"/###.png\");\n\tif (frameCount > TWO_PI / rate) exit();\n}\nvoid keyPressed() {\n\tswitch (key) {\n\tcase 'p':\n\t\tString fileName = new SimpleDateFormat(\"yyyyMMddHHmmss'.png'\").format(new Date());\n\t\tsaveFrame(\"../exports/\" + folderName + \"/\" + fileName);\n\t\tbreak;\n\tcase 's':\n\t\tsnare.trigger();\n\t\tbreak;\n\tcase 'k':\n\t\tkick.trigger();\n\t\tbreak;\n\t}\n}\nvoid sig(int d, String prompt, boolean bg, int textCol, int bgCol) {\n\tString txt = \"#genuary\" + d + \" // \" + prompt + \" // @helainebach\";\n\tint n = txt.length();\n\tif (bg) {\n\t\tfill(palette[bgCol]);\n\t\tstroke(palette[bgCol]);\n\t\tstrokeWeight(10);\n\t\trect((width - 20) - n * 10, 20, n * 10, 20);\n\t}\n\ttextFont(font);\n\ttextAlign(RIGHT, TOP);\n\tfill(palette[textCol]);\n\ttext(txt, width - 20, 20);\n}",
+			"snare",
 			"r/2",
 			"5/6",
 			"6/5",
@@ -524,7 +554,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 195.0,
 	"status_bar_visible": true,
 	"template_settings":

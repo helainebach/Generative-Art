@@ -6,53 +6,48 @@ String 	pathDATA = "../../../0_data/";
 Table 	prompts;
 String  folderName;
 PFont 	font;
-float 	n;
 float 	off 	 = 0;
 float   rate 	 = PI / 150;
-int 	day 	 = 4;
+int 	day 	 = 12;
+float 	r;
 //
 void setup() {
 	size(1080, 1080);
 	folderName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
 	font = createFont(pathDATA + "fonts/ubuntu.ttf", 20);
 	prompts = loadTable("../../prompts.csv", "header");
-	ellipseMode(CORNER);
 }
 void draw() {
-	bg();
-	blendMode(MULTIPLY);
-	for (int i = 1; i <= 4; ++i) {
-		satellite(i, i, PI/2*i);
+	background(palette[2]);
+	r = 108;
+	float hexHeight = r * 2;
+	float hexWidth = sqrt(3) / 2 * hexHeight;
+	for (int i = 0; i < height / r; i++) {
+		for (int j = 0; j < width / r; j++) {
+			float xSpacing = hexWidth * j;
+			float ySpacing = hexHeight * 0.75 * i;
+			strokeWeight(8);
+			if ((i % 2) == 0) {
+				hexagon(xSpacing, ySpacing, r);
+			} else {
+				hexagon(xSpacing + hexWidth / 2, ySpacing, r);
+			}
+		}
+		sig(day, prompts.getString(day - 1, 0), true, 3, 1);
+		off += rate;
+		// record();
 	}
-	blendMode(REPLACE);
-	sig(day, prompts.getString(day - 1, 0), false, 0, 0);
-	off += rate;
-	record();
 }
-void satellite(int c, int r, float s) {
-	fill(palette[c]);
-	pushMatrix();
-	translate(width / 2, height / 2);
-	rotate(s + off * r);
-	n = (float)(width / 2 * Math.sqrt(2)) / 2;
-	n = n - width / 4;
-	n = n * n;
-	n = n / 2;
-	n = (float)Math.sqrt(n);
-	ellipse(-n, -n, width / 2, height / 2);
-	popMatrix();
-}
-void bg() {
-	noStroke();
-	background(palette[1]);
-	fill(palette[1]);
-	rect(0, 0, width / 2, height / 2);
-	fill(palette[2]);
-	rect(0, height / 2, width / 2, height / 2);
-	fill(palette[3]);
-	rect(width / 2, 0, width / 2, height / 2);
-	fill(palette[4]);
-	rect(width / 2, height / 2, width / 2, height / 2);
+void hexagon(float cx, float cy, float r) {
+	float angle = TWO_PI / 6;
+	r = r * .75;
+	beginShape();
+	for (var i = 0; i <= 6; i++) {
+		var x = cx + cos(angle * (i + .5)) * r;
+		var y = cy + sin(angle * (i + .5)) * r;
+		vertex(x, y);
+	}
+	endShape();
 }
 void record() {
 	saveFrame("../exports/" + folderName + "/###.png");
@@ -65,9 +60,6 @@ void keyPressed() {
 		saveFrame("../exports/" + folderName + "/" + fileName);
 		break;
 	}
-}
-void mousePressed() {
-	println(mouseX, mouseY);
 }
 void sig(int d, String prompt, boolean bg, int textCol, int bgCol) {
 	String txt = "#genuary" + d + " // " + prompt + " // @helainebach";

@@ -2,10 +2,13 @@
 	"folders":
 	[
 		{
-			"path": "."
+			"path": ".",
 		},
 		{
-			"path": "/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets"
-		}
-	]
+			"path": "/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets",
+		},
+		{
+			"path": "Genuary 2023"
+		},
+	],
 }

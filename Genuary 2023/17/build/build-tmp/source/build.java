@@ -55,10 +55,12 @@ int 	day 	 = 17;
 		float r = random(1);
 		if (r > .5f) {
 			s = s * .5f;
+			pushMatrix();
 			drawSquare(x, y, s, l);
 			drawSquare(x + s, y, s, l);
 			drawSquare(x, y + s, s, l);
 			drawSquare(x + s, y + s, s, l);
+			popMatrix();
 		} else {
 			drawSquare(x, y, s, l);
 

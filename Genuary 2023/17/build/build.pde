@@ -35,12 +35,10 @@ void drawSquare(float x, float y, float s, int l) {
 		float r = random(1);
 		if (r > .5) {
 			s = s * .5;
-			pushMatrix();
 			drawSquare(x, y, s, l);
 			drawSquare(x + s, y, s, l);
 			drawSquare(x, y + s, s, l);
 			drawSquare(x + s, y + s, s, l);
-			popMatrix();
 		} else {
 			drawSquare(x, y, s, l);
 

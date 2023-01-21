@@ -4,8 +4,24 @@
 		"selected_items":
 		[
 			[
+				"push",
+				"pushMatrix"
+			],
+			[
 				"no",
-				"noFill"
+				"noStroke"
+			],
+			[
+				"stro",
+				"strokeWeight"
+			],
+			[
+				"sto",
+				"strokeWeight"
+			],
+			[
+				"rect",
+				"rect\trectMode"
 			],
 			[
 				"grid",
@@ -14,14 +30,6 @@
 			[
 				"random",
 				"random\trandomSeed"
-			],
-			[
-				"rect",
-				"rect\trectMode"
-			],
-			[
-				"push",
-				"push\tpush-pop"
 			],
 			[
 				"for",
@@ -70,10 +78,6 @@
 			[
 				"gri",
 				"grid"
-			],
-			[
-				"sto",
-				"strokeWeight"
 			],
 			[
 				"obj",
@@ -277,10 +281,29 @@
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/05",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/05/build",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08-draft"
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08-draft",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/10",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/15",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/16",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/16/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/17",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Looping Animation",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Math Grid",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Recursion",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Recursion/build_01",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Recursion/build_01/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Recursion/build_02",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Recursion/build_02/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Recursion/build_03",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Recursion/build_03/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/rose"
 	],
 	"file_history":
 	[
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/17/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/16/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Recursion/build_02/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/04/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/12-shifting/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/11/build/build.pde",
@@ -380,6 +403,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"s / 2",
 			">",
 			"photo",
 			"]);\n",
@@ -554,7 +578,7 @@
 	"show_minimap": true,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 195.0,
 	"status_bar_visible": true,
 	"template_settings":

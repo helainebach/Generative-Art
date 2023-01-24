@@ -45,6 +45,7 @@ void sig(int d, String prompt, boolean bg, int textCol, int bgCol) {
 		fill(palette[bgCol]);
 		stroke(palette[bgCol]);
 		strokeWeight(10);
+		rectMode(CORNER);
 		rect((width - 20) - n * 10, 20, n * 10, 20);
 	}
 	textFont(font);

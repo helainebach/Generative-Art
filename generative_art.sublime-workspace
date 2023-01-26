@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"str",
+				"strokeWeight"
+			],
+			[
 				"rand",
 				"randomSeed"
 			],
@@ -278,9 +282,9 @@
 	"expanded_folders":
 	[
 		"/Users/helainebach/Documents/GitHub/Generative-Art",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Boxes",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Boxes/build_01",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Chanukah 2021",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/cross stitch",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/cross stitch/build_01",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/cross stitch/build_01/build",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build",
@@ -291,6 +295,15 @@
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08-draft",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/13-sorting",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/13-sorting/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24/build/build-tmp",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01/exports",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Graphs",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Looping Animation",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots/build_01",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots/build_01/build",
@@ -298,13 +311,16 @@
 	],
 	"file_history":
 	[
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/25/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2022/00/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/23/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots/build_01/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/22-1/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/01/build/build-tmp/source/build 2.java",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/22/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/21/build/build.pde",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/19/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/20/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/11/build/build.pde",

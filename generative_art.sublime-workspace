@@ -4,16 +4,24 @@
 		"selected_items":
 		[
 			[
+				"stoke",
+				"strokeWeight"
+			],
+			[
+				"no",
+				"noFill"
+			],
+			[
+				"swit",
+				"switch\tswitch"
+			],
+			[
 				"str",
 				"strokeWeight"
 			],
 			[
 				"rand",
 				"randomSeed"
-			],
-			[
-				"no",
-				"noFill"
 			],
 			[
 				"for",
@@ -70,10 +78,6 @@
 			[
 				"back",
 				"background\tbackground"
-			],
-			[
-				"swit",
-				"switch\tswitch"
 			],
 			[
 				"hell",
@@ -159,6 +163,178 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "Genuary 2023/28/build/build.pde",
+			"settings":
+			{
+				"buffer_size": 1421,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"insert",
+					{
+						"characters": "\npale"
+					},
+					"BQAAAE0BAAAAAAAATgEAAAAAAAAAAAAATgEAAAAAAABPAQAAAAAAAAAAAABPAQAAAAAAAFABAAAAAAAAAAAAAFABAAAAAAAAUQEAAAAAAAAAAAAAUQEAAAAAAABSAQAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATQEAAAAAAABNAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					4,
+					4,
+					"left_delete",
+					null,
+					"BAAAAFEBAAAAAAAAUQEAAAAAAAABAAAAZVABAAAAAAAAUAEAAAAAAAABAAAAbE8BAAAAAAAATwEAAAAAAAABAAAAYU4BAAAAAAAATgEAAAAAAAABAAAAcA",
+					"AQAAAAAAAAABAAAAUgEAAAAAAABSAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "fill"
+					},
+					"BAAAAE4BAAAAAAAATwEAAAAAAAAAAAAATwEAAAAAAABQAQAAAAAAAAAAAABQAQAAAAAAAFEBAAAAAAAAAAAAAFEBAAAAAAAAUgEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATgEAAAAAAABOAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert_completion",
+					{
+						"completion": "fill(palette[${1:1}]);",
+						"format": "snippet",
+						"keep_prefix": false,
+						"must_insert": false,
+						"trigger": "fill"
+					},
+					"AgAAAE4BAAAAAAAATgEAAAAAAAAEAAAAZmlsbE4BAAAAAAAAXwEAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAUgEAAAAAAABSAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "3"
+					},
+					"AgAAAFsBAAAAAAAAXAEAAAAAAAAAAAAAXAEAAAAAAABcAQAAAAAAAAEAAAAx",
+					"AQAAAAAAAAABAAAAWwEAAAAAAABcAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					2,
+					"run_macro_file",
+					{
+						"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"
+					},
+					"AgAAAE4BAAAAAAAATgEAAAAAAAARAAAAZmlsbChwYWxldHRlWzNdKTtNAQAAAAAAAE0BAAAAAAAAAQAAAAo",
+					"AQAAAAAAAAABAAAAXwEAAAAAAABfAQAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"insert",
+					{
+						"characters": "\nfill"
+					},
+					"BgAAACcCAAAAAAAAKAIAAAAAAAAAAAAAKAIAAAAAAAApAgAAAAAAAAAAAAApAgAAAAAAACoCAAAAAAAAAAAAACoCAAAAAAAAKwIAAAAAAAAAAAAAKwIAAAAAAAAsAgAAAAAAAAAAAAAsAgAAAAAAAC0CAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJwIAAAAAAAAnAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					20,
+					3,
+					"left_delete",
+					null,
+					"AwAAACwCAAAAAAAALAIAAAAAAAABAAAAbCsCAAAAAAAAKwIAAAAAAAABAAAAbCoCAAAAAAAAKgIAAAAAAAABAAAAaQ",
+					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					21,
+					1,
+					"insert",
+					{
+						"characters": "il"
+					},
+					"AgAAACoCAAAAAAAAKwIAAAAAAAAAAAAAKwIAAAAAAAAsAgAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKgIAAAAAAAAqAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					26,
+					3,
+					"left_delete",
+					null,
+					"AwAAACsCAAAAAAAAKwIAAAAAAAABAAAAbCoCAAAAAAAAKgIAAAAAAAABAAAAaSkCAAAAAAAAKQIAAAAAAAABAAAAZg",
+					"AQAAAAAAAAABAAAALAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					27,
+					1,
+					"insert",
+					{
+						"characters": "fill"
+					},
+					"BAAAACkCAAAAAAAAKgIAAAAAAAAAAAAAKgIAAAAAAAArAgAAAAAAAAAAAAArAgAAAAAAACwCAAAAAAAAAAAAACwCAAAAAAAALQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAKQIAAAAAAAApAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					30,
+					1,
+					"left_delete",
+					null,
+					"AQAAACwCAAAAAAAALAIAAAAAAAABAAAAbA",
+					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					31,
+					1,
+					"insert",
+					{
+						"characters": "l"
+					},
+					"AQAAACwCAAAAAAAALQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					33,
+					1,
+					"left_delete",
+					null,
+					"AQAAACwCAAAAAAAALAIAAAAAAAABAAAAbA",
+					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					34,
+					1,
+					"insert",
+					{
+						"characters": "l"
+					},
+					"AQAAACwCAAAAAAAALQIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAALAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					36,
+					1,
+					"left_delete",
+					null,
+					"AQAAACwCAAAAAAAALAIAAAAAAAABAAAAbA",
+					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					40,
+					5,
+					"left_delete",
+					null,
+					"BQAAACsCAAAAAAAAKwIAAAAAAAABAAAAbCoCAAAAAAAAKgIAAAAAAAABAAAAaSkCAAAAAAAAKQIAAAAAAAABAAAAZigCAAAAAAAAKAIAAAAAAAABAAAACScCAAAAAAAAJwIAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAALAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -204,6 +380,10 @@
 		"selected_items":
 		[
 			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
 				"install",
 				"Package Control: Install Package"
 			],
@@ -222,10 +402,6 @@
 			[
 				"dele",
 				"Delete Blank Lines"
-			],
-			[
-				"insta",
-				"Package Control: Install Package"
 			],
 			[
 				"indent",
@@ -298,6 +474,8 @@
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24/build",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24/build/build-tmp",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/28",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/28/build",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01/build",
@@ -307,10 +485,17 @@
 		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots/build_01",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots/build_01/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/numbers"
+		"/Users/helainebach/Documents/GitHub/Generative-Art/numbers",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets"
 	],
 	"file_history":
 	[
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/fill palette.sublime-snippet",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/fill.sublime-snippet",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/28/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/26/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/27/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/27/build/build-tmp/source/build.java",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/25/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2022/00/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24/build/build.pde",
@@ -406,11 +591,11 @@
 	],
 	"find":
 	{
-		"height": 43.0
+		"height": 1169.0
 	},
 	"find_in_files":
 	{
-		"height": 130.0,
+		"height": 133.0,
 		"where_history":
 		[
 		]
@@ -420,6 +605,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"import java.text.SimpleDateFormat;\nimport java.util.Date;\n// \t\t  \t\t\t0 black // 1 white // 2 yellow // 3 orange // 4 purple\ncolor[] palette  = {#010300,#F3E3ED,#FEC513,#FE7434,#EFA9EC};\nString \tpathDATA = \"../../../0_data/\";\nTable \tprompts;\nString  folderName;\nPFont \tfont;\nfloat \toff \t = 0;\nfloat   rate \t = PI / 150;\nint \tday \t = 1;\n//\nvoid setup() {\n\tsize(1080, 1080);\n\tfolderName = new SimpleDateFormat(\"yyyyMMddHHmmss\").format(new Date());\n\tfont = createFont(pathDATA + \"fonts/ubuntu.ttf\", 20);\n\tprompts = loadTable(\"../../prompts.csv\", \"header\");\n}\nvoid draw() {\n\tbackground(palette[1]);\n\tfill(palette[0]);\n\tsig(day, prompts.getString(day - 1, 0), true, 1, 4);\n\toff += rate;\n\t// record();\n}\nvoid record() {\n\tsaveFrame(\"../exports/\" + folderName + \"/###.png\");\n\tif (frameCount > TWO_PI / rate) exit();\n}\nvoid keyPressed() {\n\tswitch (key) {\n\tcase 'p':\n\t\tString fileName = new SimpleDateFormat(\"yyyyMMddHHmmss'.png'\").format(new Date());\n\t\tsaveFrame(\"../exports/\" + folderName + \"/\" + fileName);\n\t\tbreak;\n\t}\n}\nvoid sig(int d, String prompt, boolean bg, int textCol, int bgCol) {\n\tString txt = \"#genuary\" + d + \" // \" + prompt + \" // @helainebach\";\n\tint n = txt.length();\n\tif (bg) {\n\t\tfill(palette[bgCol]);\n\t\tstroke(palette[bgCol]);\n\t\tstrokeWeight(10);\n\t\trectMode(CORNER);\n\t\trect((width - 20) - n * 10, 20, n * 10, 20);\n\t}\n\ttextFont(font);\n\ttextAlign(RIGHT, TOP);\n\tfill(palette[textCol]);\n\ttext(txt, width - 20, 20);\n}",
+			"10",
+			"100",
+			"flower.",
+			"p2",
+			"p1",
+			"n",
 			"randArray",
 			"255",
 			"2",
@@ -519,12 +711,44 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Genuary 2023/28/build/build.pde",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1421,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								551,
+								551
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Processing/Syntaxes/Processing.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 26.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -559,7 +783,7 @@
 	},
 	"output.exec":
 	{
-		"height": 27.0
+		"height": 92.0
 	},
 	"output.find_results":
 	{
@@ -569,7 +793,7 @@
 	"project": "generative_art.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":

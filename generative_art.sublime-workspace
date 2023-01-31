@@ -4,12 +4,56 @@
 		"selected_items":
 		[
 			[
+				"for",
+				"for\tfor"
+			],
+			[
+				"cop",
+				"copy\tcopy"
+			],
+			[
+				"no",
+				"noStroke"
+			],
+			[
+				"grid",
+				"grid\tdot"
+			],
+			[
+				"PVec",
+				"PVector\tPVector"
+			],
+			[
 				"stoke",
 				"strokeWeight"
 			],
 			[
-				"no",
-				"noFill"
+				"pale",
+				"palette\trandom"
+			],
+			[
+				"pal",
+				"palette\trandom"
+			],
+			[
+				"fill",
+				"fill\tfill palette"
+			],
+			[
+				"rand",
+				"random\tint"
+			],
+			[
+				"text",
+				"textAlign"
+			],
+			[
+				"frame",
+				"framerate\tframeRate (set)"
+			],
+			[
+				"adj",
+				"adjnum1"
 			],
 			[
 				"swit",
@@ -18,14 +62,6 @@
 			[
 				"str",
 				"strokeWeight"
-			],
-			[
-				"rand",
-				"randomSeed"
-			],
-			[
-				"for",
-				"for\tfor"
 			],
 			[
 				"PVe",
@@ -42,10 +78,6 @@
 			[
 				"stroke",
 				"stroke\tstrokeWeight"
-			],
-			[
-				"grid",
-				"grid\tgrid"
 			],
 			[
 				"random",
@@ -112,10 +144,6 @@
 				"palette"
 			],
 			[
-				"frame",
-				"framerate"
-			],
-			[
 				"pve",
 				"PVector"
 			],
@@ -126,10 +154,6 @@
 			[
 				"blen",
 				"blend"
-			],
-			[
-				"text",
-				"text"
 			],
 			[
 				"gr",
@@ -148,10 +172,6 @@
 				"export"
 			],
 			[
-				"pale",
-				"palette"
-			],
-			[
 				"frm",
 				"framerate"
 			],
@@ -163,178 +183,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "Genuary 2023/28/build/build.pde",
-			"settings":
-			{
-				"buffer_size": 1421,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			},
-			"undo_stack":
-			[
-				[
-					3,
-					1,
-					"insert",
-					{
-						"characters": "\npale"
-					},
-					"BQAAAE0BAAAAAAAATgEAAAAAAAAAAAAATgEAAAAAAABPAQAAAAAAAAAAAABPAQAAAAAAAFABAAAAAAAAAAAAAFABAAAAAAAAUQEAAAAAAAAAAAAAUQEAAAAAAABSAQAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAATQEAAAAAAABNAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					4,
-					4,
-					"left_delete",
-					null,
-					"BAAAAFEBAAAAAAAAUQEAAAAAAAABAAAAZVABAAAAAAAAUAEAAAAAAAABAAAAbE8BAAAAAAAATwEAAAAAAAABAAAAYU4BAAAAAAAATgEAAAAAAAABAAAAcA",
-					"AQAAAAAAAAABAAAAUgEAAAAAAABSAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					5,
-					1,
-					"insert",
-					{
-						"characters": "fill"
-					},
-					"BAAAAE4BAAAAAAAATwEAAAAAAAAAAAAATwEAAAAAAABQAQAAAAAAAAAAAABQAQAAAAAAAFEBAAAAAAAAAAAAAFEBAAAAAAAAUgEAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAATgEAAAAAAABOAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					6,
-					1,
-					"insert_completion",
-					{
-						"completion": "fill(palette[${1:1}]);",
-						"format": "snippet",
-						"keep_prefix": false,
-						"must_insert": false,
-						"trigger": "fill"
-					},
-					"AgAAAE4BAAAAAAAATgEAAAAAAAAEAAAAZmlsbE4BAAAAAAAAXwEAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAUgEAAAAAAABSAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					7,
-					1,
-					"insert",
-					{
-						"characters": "3"
-					},
-					"AgAAAFsBAAAAAAAAXAEAAAAAAAAAAAAAXAEAAAAAAABcAQAAAAAAAAEAAAAx",
-					"AQAAAAAAAAABAAAAWwEAAAAAAABcAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					15,
-					2,
-					"run_macro_file",
-					{
-						"file": "res://Packages/Default/Delete to Hard BOL.sublime-macro"
-					},
-					"AgAAAE4BAAAAAAAATgEAAAAAAAARAAAAZmlsbChwYWxldHRlWzNdKTtNAQAAAAAAAE0BAAAAAAAAAQAAAAo",
-					"AQAAAAAAAAABAAAAXwEAAAAAAABfAQAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					18,
-					1,
-					"insert",
-					{
-						"characters": "\nfill"
-					},
-					"BgAAACcCAAAAAAAAKAIAAAAAAAAAAAAAKAIAAAAAAAApAgAAAAAAAAAAAAApAgAAAAAAACoCAAAAAAAAAAAAACoCAAAAAAAAKwIAAAAAAAAAAAAAKwIAAAAAAAAsAgAAAAAAAAAAAAAsAgAAAAAAAC0CAAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAJwIAAAAAAAAnAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					20,
-					3,
-					"left_delete",
-					null,
-					"AwAAACwCAAAAAAAALAIAAAAAAAABAAAAbCsCAAAAAAAAKwIAAAAAAAABAAAAbCoCAAAAAAAAKgIAAAAAAAABAAAAaQ",
-					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					21,
-					1,
-					"insert",
-					{
-						"characters": "il"
-					},
-					"AgAAACoCAAAAAAAAKwIAAAAAAAAAAAAAKwIAAAAAAAAsAgAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAKgIAAAAAAAAqAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					26,
-					3,
-					"left_delete",
-					null,
-					"AwAAACsCAAAAAAAAKwIAAAAAAAABAAAAbCoCAAAAAAAAKgIAAAAAAAABAAAAaSkCAAAAAAAAKQIAAAAAAAABAAAAZg",
-					"AQAAAAAAAAABAAAALAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					27,
-					1,
-					"insert",
-					{
-						"characters": "fill"
-					},
-					"BAAAACkCAAAAAAAAKgIAAAAAAAAAAAAAKgIAAAAAAAArAgAAAAAAAAAAAAArAgAAAAAAACwCAAAAAAAAAAAAACwCAAAAAAAALQIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAAKQIAAAAAAAApAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					30,
-					1,
-					"left_delete",
-					null,
-					"AQAAACwCAAAAAAAALAIAAAAAAAABAAAAbA",
-					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					31,
-					1,
-					"insert",
-					{
-						"characters": "l"
-					},
-					"AQAAACwCAAAAAAAALQIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAALAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					33,
-					1,
-					"left_delete",
-					null,
-					"AQAAACwCAAAAAAAALAIAAAAAAAABAAAAbA",
-					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					34,
-					1,
-					"insert",
-					{
-						"characters": "l"
-					},
-					"AQAAACwCAAAAAAAALQIAAAAAAAAAAAAA",
-					"AQAAAAAAAAABAAAALAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					36,
-					1,
-					"left_delete",
-					null,
-					"AQAAACwCAAAAAAAALAIAAAAAAAABAAAAbA",
-					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAAPC/"
-				],
-				[
-					40,
-					5,
-					"left_delete",
-					null,
-					"BQAAACsCAAAAAAAAKwIAAAAAAAABAAAAbCoCAAAAAAAAKgIAAAAAAAABAAAAaSkCAAAAAAAAKQIAAAAAAAABAAAAZigCAAAAAAAAKAIAAAAAAAABAAAACScCAAAAAAAAJwIAAAAAAAABAAAACg",
-					"AQAAAAAAAAABAAAALAIAAAAAAAAsAgAAAAAAAAAAAAAAAPC/"
-				]
-			]
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -380,12 +228,48 @@
 		"selected_items":
 		[
 			[
-				"insta",
+				"Snippet: fill",
+				"Snippet: fill"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"package res",
+				"PackageResourceViewer: Extract Package"
+			],
+			[
+				"isntall",
 				"Package Control: Install Package"
 			],
 			[
 				"install",
 				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"formatter",
+				"SublimeAStyleFormatter: Format Current File"
 			],
 			[
 				"vsket",
@@ -428,10 +312,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"packa",
-				"Package Control: Install Package"
-			],
-			[
 				"color",
 				"UI: Customize Color Scheme"
 			]
@@ -458,41 +338,31 @@
 	"expanded_folders":
 	[
 		"/Users/helainebach/Documents/GitHub/Generative-Art",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/cross stitch",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/cross stitch/build_01",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/cross stitch/build_01/build",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/00/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/03",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/05",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/05/build",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08-draft",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/13-sorting",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/13-sorting/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/24/build/build-tmp",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/28",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/28/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Gradients/build_01/exports",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Graphs",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Looping Animation",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots/build_01",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/noiseDots/build_01/build",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/numbers",
-		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets"
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08/build",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/12-shifting",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/12-shifting/build"
 	],
 	"file_history":
 	[
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/31/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/30/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/12-shifting/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/29/build/build.pde",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/random int.sublime-snippet",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/28/build/build.pde",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/background palette.sublime-snippet",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/ceil.sublime-snippet",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/plot-setup.sublime-snippet",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/floor.sublime-snippet",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/SublimeAStyleFormatter/README.md",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Installed Packages/Copy Cut and Paste Lines.sublime-package",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Installed Packages/Formatter.sublime-package",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/snippets/fill palette.sublime-snippet",
+		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/stroke palette.sublime-snippet",
 		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/fill palette.sublime-snippet",
 		"/Users/helainebach/Library/Application Support/Sublime Text/Packages/User/Snippets/fill.sublime-snippet",
-		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/28/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/26/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/27/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/27/build/build-tmp/source/build.java",
@@ -591,7 +461,7 @@
 	],
 	"find":
 	{
-		"height": 1169.0
+		"height": 47.0
 	},
 	"find_in_files":
 	{
@@ -605,6 +475,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"y",
+			"i",
+			"adjnum",
+			"12",
+			"10",
+			"adj",
 			"import java.text.SimpleDateFormat;\nimport java.util.Date;\n// \t\t  \t\t\t0 black // 1 white // 2 yellow // 3 orange // 4 purple\ncolor[] palette  = {#010300,#F3E3ED,#FEC513,#FE7434,#EFA9EC};\nString \tpathDATA = \"../../../0_data/\";\nTable \tprompts;\nString  folderName;\nPFont \tfont;\nfloat \toff \t = 0;\nfloat   rate \t = PI / 150;\nint \tday \t = 1;\n//\nvoid setup() {\n\tsize(1080, 1080);\n\tfolderName = new SimpleDateFormat(\"yyyyMMddHHmmss\").format(new Date());\n\tfont = createFont(pathDATA + \"fonts/ubuntu.ttf\", 20);\n\tprompts = loadTable(\"../../prompts.csv\", \"header\");\n}\nvoid draw() {\n\tbackground(palette[1]);\n\tfill(palette[0]);\n\tsig(day, prompts.getString(day - 1, 0), true, 1, 4);\n\toff += rate;\n\t// record();\n}\nvoid record() {\n\tsaveFrame(\"../exports/\" + folderName + \"/###.png\");\n\tif (frameCount > TWO_PI / rate) exit();\n}\nvoid keyPressed() {\n\tswitch (key) {\n\tcase 'p':\n\t\tString fileName = new SimpleDateFormat(\"yyyyMMddHHmmss'.png'\").format(new Date());\n\t\tsaveFrame(\"../exports/\" + folderName + \"/\" + fileName);\n\t\tbreak;\n\t}\n}\nvoid sig(int d, String prompt, boolean bg, int textCol, int bgCol) {\n\tString txt = \"#genuary\" + d + \" // \" + prompt + \" // @helainebach\";\n\tint n = txt.length();\n\tif (bg) {\n\t\tfill(palette[bgCol]);\n\t\tstroke(palette[bgCol]);\n\t\tstrokeWeight(10);\n\t\trectMode(CORNER);\n\t\trect((width - 20) - n * 10, 20, n * 10, 20);\n\t}\n\ttextFont(font);\n\ttextAlign(RIGHT, TOP);\n\tfill(palette[textCol]);\n\ttext(txt, width - 20, 20);\n}",
 			"10",
 			"100",
@@ -711,38 +587,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "Genuary 2023/28/build/build.pde",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1421,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								551,
-								551
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Processing/Syntaxes/Processing.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 26.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -752,7 +596,7 @@
 	},
 	"input":
 	{
-		"height": 46.0
+		"height": 47.0
 	},
 	"layout":
 	{

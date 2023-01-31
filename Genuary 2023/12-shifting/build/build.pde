@@ -10,7 +10,7 @@ PImage  img;
 float 	cell;
 float 	off 	 = 0;
 float   rate 	 = PI / 150;
-int 	day 	 = 1;
+int 	day 	 = 12;
 //
 void setup() {
 	size(1080, 1080);
@@ -41,7 +41,6 @@ void piece(float x, float y, float c) {
 		float cy = (n / 4) * c;
 		int col = (1 + Math.abs((int)x * (int)y)) % (palette.length - 1);
 		// int col = n%palette.length;
-
 		fill(palette[col]);
 		// strokeWeight(1);
 		noStroke();
@@ -50,18 +49,14 @@ void piece(float x, float y, float c) {
 		// case 1 : square(cx, cy, c);
 		// case 2 : square(cx, cy, c);
 		case 3 : square(cx, cy, c);
-
 		// case 4 : square(cx, cy, c);
 		case 5 : square(cx, cy, c);
 		case 6 : square(cx, cy, c);
 		// case 7 : square(cx, cy, c);
-
 		// case 8 : square(cx, cy, c);
 		case 9 : square(cx, cy, c);
 		case 10 : square(cx, cy, c);
 		case 11 : square(cx, cy, c);
-
-
 		case 12 : square(cx, cy, c);
 		// case 13 : square(cx, cy, c);
 		case 14 : square(cx, cy, c);

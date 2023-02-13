@@ -4,16 +4,36 @@
 		"selected_items":
 		[
 			[
+				"mouse",
+				"mouse\tmousePressed"
+			],
+			[
+				"mous",
+				"mouse\tmousePressed"
+			],
+			[
+				"strok",
+				"strokeWeight"
+			],
+			[
+				"rect",
+				"rect\trectMode"
+			],
+			[
+				"no",
+				"noFill"
+			],
+			[
+				"gri",
+				"grid\tgrid"
+			],
+			[
 				"for",
 				"for\tfor"
 			],
 			[
 				"cop",
 				"copy\tcopy"
-			],
-			[
-				"no",
-				"noStroke"
 			],
 			[
 				"grid",
@@ -68,10 +88,6 @@
 				"PVector\tPVector"
 			],
 			[
-				"rect",
-				"rect\trectMode"
-			],
-			[
 				"sr",
 				"stroke"
 			],
@@ -104,10 +120,6 @@
 				"redraw"
 			],
 			[
-				"mouse",
-				"mouse\tmousePressed"
-			],
-			[
 				"back",
 				"background\tbackground"
 			],
@@ -122,10 +134,6 @@
 			[
 				"ima",
 				"image"
-			],
-			[
-				"gri",
-				"grid"
 			],
 			[
 				"sto",
@@ -158,10 +166,6 @@
 			[
 				"gr",
 				"grid"
-			],
-			[
-				"strok",
-				"strokeWeight"
 			],
 			[
 				"save",
@@ -338,6 +342,9 @@
 	"expanded_folders":
 	[
 		"/Users/helainebach/Documents/GitHub/Generative-Art",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/2022-12-30",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/2023-02-12",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/2023-02-12/build_01",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/08/build",
@@ -346,6 +353,9 @@
 	],
 	"file_history":
 	[
+		"/Users/helainebach/Documents/GitHub/Generative-Art/2023-02-12/build_01/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/2023-02-12/build_02/build/build.pde",
+		"/Users/helainebach/Documents/GitHub/Generative-Art/2023-02-12/build_03/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/31/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/30/build/build.pde",
 		"/Users/helainebach/Documents/GitHub/Generative-Art/Genuary 2023/12-shifting/build/build.pde",
@@ -468,6 +478,7 @@
 		"height": 133.0,
 		"where_history":
 		[
+			"Genuary 2023"
 		]
 	},
 	"find_state":
@@ -475,6 +486,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"hypo",
+			"10",
 			"y",
 			"i",
 			"adjnum",
@@ -627,7 +640,7 @@
 	},
 	"output.exec":
 	{
-		"height": 92.0
+		"height": 31.0
 	},
 	"output.find_results":
 	{

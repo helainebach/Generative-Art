@@ -9,13 +9,14 @@ color[][] palette = {
 	{#1A535C,#4ECDC4,#F7FFF7,#FF6B6B,#FFE66D},
 	{#FF810A,#540D6E,#FFEA00,#EE4266},
 	{#000F41,#55FFF5,#1ECD1E,#A500FA,#FA7823,#FFFA37,#DE1C1C},
+	{#1a93a0,#ADD8F3,#FAF6EB,#F3E0A8,#F99263},
 	{#F3E3ED,#FEC513,#FE7434,#EFA9EC,#010300}
 };
 
 
 int total = palette.length;
 void settings() {
-	size(450, total * 50,P2D);
+	size(450, total * 50);
 }
 void draw() {
 	noStroke();

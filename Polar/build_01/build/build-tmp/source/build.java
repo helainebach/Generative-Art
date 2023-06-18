@@ -15,33 +15,25 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int[] palette = {0xFF1A93A0,0xFFFAF6EB,0xFFADD8F3,0xFFF3E0A8,0xFFF99263};
-String pathDATA = "../../../0_data/";
+int  	bg = 0;
+int  	fg = 255;
+int 	u  = 12;
+float 	x, y, r;
  public void setup() {
 	/* size commented out by preprocessor */;
+	noFill();
 }
  public void draw() {
-	background(palette[0]);
-	noFill();
-	stroke(palette[1]);
-	strokeWeight(.5f);
-	grid(12);
-	strokeWeight(10);
-	stroke(palette[3]);
-	fill(palette[4]);
-	curveTightness(-1);
-	float openness = map(mouseX, 0, width, height / 2, height);
-	strokeJoin(ROUND);
+	bg();
+	r = map(mouseX, 0, width, 0, (u / 2) + 1);
+	int n = (int)map(mouseY, 0, height, 3, u);
 	beginShape();
-	curveVertex (0, 				openness);
-	curveVertex (width / 6, 		height / 2);
-	curveVertex (width - width / 6, height / 2);
-	curveVertex (width - width / 6, openness);
-	vertex 		(width - width / 6, height / 2);
-	curveVertex (width - width / 6, height - openness);
-	curveVertex (width - width / 6, height / 2);
-	curveVertex (width / 6, 		height / 2);
-	curveVertex (0, height - openness);
+	for (float i = 0; i <= TWO_PI; i = i + TWO_PI / n) {
+		polar(i);
+		stroke(255);
+		strokeWeight(5);
+		vertex(x, y);
+	}
 	endShape(CLOSE);
 }
  public void grid(int count) {
@@ -50,12 +42,26 @@ String pathDATA = "../../../0_data/";
 	for (int n = 0; n < area; n++) {
 		int x = (n % count) * cell;
 		int y = (n / count) * cell;
+		strokeWeight(.2f);
 		square(x, y, cell);
 	}
+	for (int i = 0; i <= count; i++) {
+		strokeWeight(.5f);
+		circle(width / 2, height / 2, i * cell * 2);
+	}
+}
+ public void bg() {
+	background(bg);
+	stroke(75);
+	grid(u);
+}
+ public void polar(float a) {
+	x = width / 2 + sin(a) * r * (width / u);
+	y = height / 2 + cos(a) * r * (width / u);
 }
 
 
-  public void settings() { size(1080, 1080); }
+  public void settings() { size(600, 600); }
 
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "build" };

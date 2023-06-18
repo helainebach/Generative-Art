@@ -1,7 +1,7 @@
 color[] palette = {#000F41,#A500FA,#55FFF5,#FA7823};
 int t, w;
 void setup() {
-	size(600, 600, P2D);
+	size(600, 600);
 	noStroke();
 }
 void draw() {

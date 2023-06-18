@@ -15,34 +15,24 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int[] palette = {0xFF1A93A0,0xFFFAF6EB,0xFFADD8F3,0xFFF3E0A8,0xFFF99263};
-String pathDATA = "../../../0_data/";
+int u;
+int[] palette = {0xFF0160B6,0xFF03A08F,0xFFFFDD5E,0xFFFFA051,0xFFFF3C1B};
+
  public void setup() {
 	/* size commented out by preprocessor */;
+	background(255);
+	strokeCap(SQUARE);
+	u = width / 5;
+	noFill();
 }
  public void draw() {
-	background(palette[0]);
-	noFill();
-	stroke(palette[1]);
-	strokeWeight(.5f);
-	grid(12);
-	strokeWeight(10);
-	stroke(palette[3]);
-	fill(palette[4]);
-	curveTightness(-1);
-	float openness = map(mouseX, 0, width, height / 2, height);
-	strokeJoin(ROUND);
-	beginShape();
-	curveVertex (0, 				openness);
-	curveVertex (width / 6, 		height / 2);
-	curveVertex (width - width / 6, height / 2);
-	curveVertex (width - width / 6, openness);
-	vertex 		(width - width / 6, height / 2);
-	curveVertex (width - width / 6, height - openness);
-	curveVertex (width - width / 6, height / 2);
-	curveVertex (width / 6, 		height / 2);
-	curveVertex (0, height - openness);
-	endShape(CLOSE);
+	strokeWeight(u/2 + 1);
+	for (float i = 0; i < 7; i++) {
+		stroke(palette[(int)i%palette.length]);
+		zigZag(i * u/2, i * u/-2);
+		zigZag(i * u/-2, i * u/2);
+	}
+	grid(20);
 }
  public void grid(int count) {
 	int area = count * count;
@@ -50,12 +40,25 @@ String pathDATA = "../../../0_data/";
 	for (int n = 0; n < area; n++) {
 		int x = (n % count) * cell;
 		int y = (n / count) * cell;
+		noFill();
+		stroke(255);
+		strokeWeight(1);
 		square(x, y, cell);
 	}
 }
+ public void zigZag(float x, float y) {
+	beginShape();
+	while (y <= height) {
+		vertex(x, y);
+		y += u;
+		vertex(x, y);
+		x += u;
+	}
+	endShape(OPEN);
+}
 
 
-  public void settings() { size(1080, 1080); }
+  public void settings() { size(600, 600); }
 
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "build" };

@@ -16,7 +16,7 @@ int 	t = 100;
 int 	sq = 1;
 //
 void setup() {
-	size(1000, 1000, P2D);
+	size(1000, 1000);
 	noStroke();
 	rectMode(CENTER);
 	squares = new IntList();

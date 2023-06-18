@@ -4,6 +4,9 @@ import processing.data.*;
 import processing.event.*;
 import processing.opengl.*;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.io.File;
@@ -15,32 +18,43 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int[] palette  = {0xFF010300,0xFFF3E3ED,0xFFFEC513,0xFFFE7434,0xFFEFA9EC};
-float 	off 	 = 0;
-float   rate 	 = PI / 150;
+int[] palette = {0xFF000F41,0xFFA500FA,0xFF55FFF5,0xFFFA7823};
+int t, w;
  public void setup() {
 	/* size commented out by preprocessor */;
+	noStroke();
 }
  public void draw() {
-	background(palette[1]);
-	dotGrid(60, palette[2], palette[3]);
+	// scale(2);
+	// translate(width / 2.5, height / 2);
+	// rotate(PI / 4);
+	drawing();
 }
- public void dotGrid(int count, int c1, int c2) {
-	int cell = width / count;
-	int area = count * (height / cell);
-	translate(cell, cell);
-	for (int n = 0; n < area; n++) {
-		int x = (n % count) * cell;
-		int y = (n / count) * cell;
-		float dotSize = noise(x, y, off) * cell * 2;
-		int c = lerpColor(c1, c2, map(n, 0, area, 0, 1));
-		if (x < width - cell && y < height - cell) {
-			stroke(c);
-			strokeWeight(dotSize);
-			point(x, y);
-		}
+ public void column(int n) {
+	for (int i = 0; i < n; i++) {
+		fill(palette[(n + i) % palette.length]);
+		rect(0, i * (height / n), w, height / n);
 	}
-	off += rate;
+}
+ public void drawing() {
+	// translate(-width / 2, -height / 2);
+	while (t < width) {
+		w = (int)(random(5, 12)) * 6;
+		column((int)random(1, 4) * 4);
+		translate(w, 0);
+		t = t + w;
+	}
+}
+
+
+
+ public void keyPressed() {
+		switch (key) {
+		case 'p':
+		String fileName = new SimpleDateFormat("yyyyMMddHHmmss'.png'").format(new Date());
+		saveFrame("../exports/stills/"+fileName);
+		break;
+	}
 }
 
 

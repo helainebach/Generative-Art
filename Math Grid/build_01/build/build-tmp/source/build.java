@@ -15,32 +15,45 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int[] palette  = {0xFF010300,0xFFF3E3ED,0xFFFEC513,0xFFFE7434,0xFFEFA9EC};
-float 	off 	 = 0;
-float   rate 	 = PI / 150;
+int[] palette = {0xFFF60000,0xFFFF8C00,0xFFFFEE00,0xFF4DE94C,0xFF3783FF,0xFF4815AA};
+int m, s;
  public void setup() {
 	/* size commented out by preprocessor */;
+	strokeWeight(2);
+	noFill();
+	rectMode(CENTER);
+
 }
  public void draw() {
-	background(palette[1]);
-	dotGrid(60, palette[2], palette[3]);
+	frameRate(1);
+	background(0);
+	stroke(palette[0]);
+	square(width / 2, height / 2, 520);
+	translate((600 - 512) / 2 + 2, (600 - 512) / 2);
+	strokeWeight(3);
+	m = (int)random(9, 15);
+	s = (int)random(2, 4);
+	grid(m, s);
+	saveFrame("../exports/stills/"+m+"-"+s+".png");
 }
- public void dotGrid(int count, int c1, int c2) {
-	int cell = width / count;
-	int area = count * (height / cell);
-	translate(cell, cell);
+ public void grid(int m, int s) {
+	int count = 128;
+	int cell = 4;
+	int area = 16384;
 	for (int n = 0; n < area; n++) {
-		int x = (n % count) * cell;
-		int y = (n / count) * cell;
-		float dotSize = noise(x, y, off) * cell * 2;
-		int c = lerpColor(c1, c2, map(n, 0, area, 0, 1));
-		if (x < width - cell && y < height - cell) {
-			stroke(c);
-			strokeWeight(dotSize);
-			point(x, y);
+		int x = (n % count);
+		int y = (n / count);
+		int num = ((128 + x + y) ^ (256 + x - y)) % m;
+		if (num <= s) {
+			if (num >= s / 2) {
+				stroke(palette[n * 2 % palette.length]);
+
+			} else {
+				stroke(palette[4]);
+			}
+			point(x * cell, y * cell);
 		}
 	}
-	off += rate;
 }
 
 

@@ -4,6 +4,8 @@ import processing.data.*;
 import processing.event.*;
 import processing.opengl.*;
 
+import processing.svg.*;
+
 import java.util.HashMap;
 import java.util.ArrayList;
 import java.io.File;
@@ -15,36 +17,32 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int[] palette  = {0xFF010300,0xFFF3E3ED,0xFFFEC513,0xFFFE7434,0xFFEFA9EC};
-float 	off 	 = 0;
-float   rate 	 = PI / 150;
+
+String[] 	code;
+String 		path;
+PFont 		ubuntu;
  public void setup() {
 	/* size commented out by preprocessor */;
+	ubuntu = createFont("../../../0_data/fonts/ubuntu.ttf", 10);
+	path   = "shofar";
+	code   = loadStrings(path + ".txt");
 }
  public void draw() {
-	background(palette[1]);
-	dotGrid(60, palette[2], palette[3]);
-}
- public void dotGrid(int count, int c1, int c2) {
-	int cell = width / count;
-	int area = count * (height / cell);
-	translate(cell, cell);
-	for (int n = 0; n < area; n++) {
-		int x = (n % count) * cell;
-		int y = (n / count) * cell;
-		float dotSize = noise(x, y, off) * cell * 2;
-		int c = lerpColor(c1, c2, map(n, 0, area, 0, 1));
-		if (x < width - cell && y < height - cell) {
-			stroke(c);
-			strokeWeight(dotSize);
-			point(x, y);
-		}
+	beginRecord (SVG, "../output/" + path + ".svg");
+	background  (255);
+	textAlign   (LEFT, TOP);
+	textFont    (ubuntu);
+	fill(0);
+	int y = 0;
+	for (String line : code) {
+		text(line, 10, 10 + y);
+		y += textAscent() + textDescent() + 2;
 	}
-	off += rate;
+	endRecord();
 }
 
 
-  public void settings() { size(600, 600); }
+  public void settings() { size(400, 500); }
 
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "build" };

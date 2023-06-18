@@ -15,36 +15,35 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int[] palette = {0xFF1A93A0,0xFFFAF6EB,0xFFADD8F3,0xFFF3E0A8,0xFFF99263};
-String pathDATA = "../../../0_data/";
+int x;
+int y;
+int r;
  public void setup() {
 	/* size commented out by preprocessor */;
 }
  public void draw() {
-	background(palette[0]);
-	noFill();
-	stroke(palette[1]);
-	strokeWeight(.5f);
-	grid(12);
-	strokeWeight(10);
-	stroke(palette[3]);
-	fill(palette[4]);
-	curveTightness(-1);
-	float openness = map(mouseX, 0, width, height / 2, height);
-	strokeJoin(ROUND);
+	background(255);
+	grid(10);
 	beginShape();
-	curveVertex (0, 				openness);
-	curveVertex (width / 6, 		height / 2);
-	curveVertex (width - width / 6, height / 2);
-	curveVertex (width - width / 6, openness);
-	vertex 		(width - width / 6, height / 2);
-	curveVertex (width - width / 6, height - openness);
-	curveVertex (width - width / 6, height / 2);
-	curveVertex (width / 6, 		height / 2);
-	curveVertex (0, height - openness);
-	endShape(CLOSE);
+	for (int i = 0; i <= 10; i++) {
+		randomSeed((int)i * 1000);
+		x = i * (width / 10);
+		y = width - i * (height / 10) + r;
+		if (i < 1 || i > 8) {
+			r = 0;
+		} else {
+			r = (int)random(width / 10) * 3;
+		}
+		strokeWeight(10);
+		point(x, y);
+		noFill();
+		strokeWeight(3);
+		vertex(x, y);
+	}
+	endShape(OPEN);
 }
  public void grid(int count) {
+	strokeWeight(1);
 	int area = count * count;
 	int cell = width / count;
 	for (int n = 0; n < area; n++) {
@@ -55,7 +54,7 @@ String pathDATA = "../../../0_data/";
 }
 
 
-  public void settings() { size(1080, 1080); }
+  public void settings() { size(600, 600); }
 
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "build" };

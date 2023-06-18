@@ -15,32 +15,34 @@ import java.io.IOException;
 
 public class build extends PApplet {
 
-int[] palette  = {0xFF010300,0xFFF3E3ED,0xFFFEC513,0xFFFE7434,0xFFEFA9EC};
-float 	off 	 = 0;
-float   rate 	 = PI / 150;
+int   u;
+int [] palette = {0xFF000F41,0xFF55FFF5,0xFFA500FA,0xFFFA7823};
+
  public void setup() {
 	/* size commented out by preprocessor */;
+	noFill();
+	strokeCap(SQUARE);
+	u = width / 7;
+	strokeWeight(u / 2 + 1);
 }
  public void draw() {
-	background(palette[1]);
-	dotGrid(60, palette[2], palette[3]);
-}
- public void dotGrid(int count, int c1, int c2) {
-	int cell = width / count;
-	int area = count * (height / cell);
-	translate(cell, cell);
-	for (int n = 0; n < area; n++) {
-		int x = (n % count) * cell;
-		int y = (n / count) * cell;
-		float dotSize = noise(x, y, off) * cell * 2;
-		int c = lerpColor(c1, c2, map(n, 0, area, 0, 1));
-		if (x < width - cell && y < height - cell) {
-			stroke(c);
-			strokeWeight(dotSize);
-			point(x, y);
-		}
+	background(palette[0]);
+	for (float i = 0; i < 8; i++) {
+		stroke(palette[(int)i % palette.length]);
+		zigZag(i * u / 2, i * u / -2 - u / 2);
+		// zigZag(i * u / -2, i * u / 2 - u / 2);
 	}
-	off += rate;
+}
+
+ public void zigZag(float x, float y) {
+	beginShape();
+	while (y <= width) {
+		vertex(x, y);
+		y += u;
+		vertex(x, y);
+		x += u;
+	}
+	endShape(OPEN);
 }
 
 

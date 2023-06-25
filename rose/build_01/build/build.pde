@@ -1,20 +1,13 @@
 import processing.svg.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-
 boolean exportSVG = false;
 String  fileName;
-
 void setup(){
-
 	size(800, 800);
-	
 }
-
 void draw() {
- 
 	background(255);
-  
   	if (exportSVG){
 		fileName = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());	
   	 	beginRecord(SVG, "../exports/svgs/"+fileName+".svg");
@@ -22,23 +15,18 @@ void draw() {
 	noFill();
   	stroke(0);
 //--------------------------------------------	
-
 	rose(width/2,height/2,7,2,width/2);
-
 //--------------------------------------------	
   	if (exportSVG){
   	  	endRecord();
   	  	exportSVG = false;
  	}
 }
-
 void keyPressed(){
-
 	if (key == 'e'){
   		exportSVG = true;
   	}
 }
-
 void rose(float px, float py, float n, float d, float rad){
 	pushMatrix();
 		translate(px,py);
@@ -53,4 +41,3 @@ void rose(float px, float py, float n, float d, float rad){
 	endShape(OPEN);
 	popMatrix();
 }
-

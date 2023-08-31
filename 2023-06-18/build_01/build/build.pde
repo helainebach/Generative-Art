@@ -51,7 +51,6 @@ void draw() {
 				noStroke();
 				fill(palette[closest % palette.length]);
 				float size = map(noise, 0, 160, pix * .9, 1);
-				// println(noise);
 				if (size > 3) circle(x, y, size);
 			}
 		}
